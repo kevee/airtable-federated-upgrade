@@ -1,4 +1,4 @@
-# Federated Airtables
+# Federated Versioning of Airtable bases
 
 Maintaining an application in Airtable across multiple accounts with their own changes to table schema requires manual labor. Let's [create a simple human resources app](https://airtable.com/shr2EB3RyAgZVhwDJ) with the following structure:
 
@@ -83,6 +83,7 @@ There are still some things you cannot do via Airtable Apps, nor the Data API:
 
 - Change name and description of tables
 - Create or change views 😢
+- Add, view, or change apps and automations
 
 ## Note about security and API access
 
