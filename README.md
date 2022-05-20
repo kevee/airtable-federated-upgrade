@@ -56,17 +56,33 @@ We can store these in a [centralized mapping base](https://airtable.com/shrP5KnH
 
 We add a **Deployment builder** app to our "main" base and then make whatever changes we want to propogate out to client bases. Proof-of-concept code is available in this repo at `./deployment-builder-block`, that lets a user generate a deployment JSON object. This object can be versioned and checked into a repository. An example deployment object is in the `./deployments/` directory.
 
+<img width="798" alt="The deployment builder interface. It is a big textarea with a JSON object." src="https://user-images.githubusercontent.com/270536/169541872-eaf1d5f1-bd43-41cb-9ac0-c8d16f7596a5.png">
+
+
 A much better implementation would have an interface for the current user to compare a base against the latest deployed version, add additional notes about the release, and set changes as required or optional for a version.
 
 #### Preview upgrade on the client's base
 
 We add an **Upgrade** app to each client's base. This app first checks that the user has permissions to edit the schema of tables, then prompts them to upgrade if the base is not up-to-date.
 
+<img width="815" alt="A dropdown of available versions." src="https://user-images.githubusercontent.com/270536/169541941-f8eed4e5-fa81-4be6-9c4e-bc994e1947dc.png">
+
 The app gives a preview of all the things that will happen to the base once the upgrade is started. It finally changes the base tables and fields and reports the results of the upgrade
+
+<img width="825" alt="The upgrade app shows two changes - a new email field and a new description field." src="https://user-images.githubusercontent.com/270536/169542016-ef00a31b-00c7-441d-a0cd-2f157cb30327.png">
 
 #### Upgrade is done
 
 Once the upgrade is done, any changes, and especially new fields, are put back into the centralized mapping Airtable base that tracks field IDs through the standard Airtable Data API.
+
+<img width="875" alt="An upgrade succesful message with a list of the new fields that were created." src="https://user-images.githubusercontent.com/270536/169542093-26c20ff5-68f3-4811-a462-a1d3df81edf3.png">
+
+## Limitations with this approach
+
+There are still some things you cannot do via Airtable Apps, nor the Data API:
+
+- Change name and description of tables
+- Create or change views 😢
 
 ## Note about security and API access
 
