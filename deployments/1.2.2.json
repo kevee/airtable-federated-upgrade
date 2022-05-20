@@ -1,0 +1,209 @@
+{
+  "version": "1.2.2",
+  "author": "Kevin Miller <kevin@kevee.net>",
+  "tables": [
+    {
+      "id": "tblW7MakeoFF0b5hw",
+      "name": "People",
+      "description": "A list of all employees.\n",
+      "sourceTable": {
+        "_id": "recPNZkl0rhzSsDSS",
+        "id": "people",
+        "name": "People",
+        "airtableId": "tblW7MakeoFF0b5hw"
+      },
+      "primaryField": {
+        "id": "flddWEhQh3juNrPNV",
+        "name": "Name",
+        "description": "",
+        "type": "singleLineText",
+        "config": {
+          "type": "singleLineText",
+          "options": null
+        },
+        "sourceField": {
+          "_id": "recnPxVCRXNNsjT3O",
+          "id": "people.name",
+          "name": "Name",
+          "airtableId": "flddWEhQh3juNrPNV"
+        }
+      },
+      "fields": [
+        {
+          "id": "flddWEhQh3juNrPNV",
+          "name": "Name",
+          "description": "",
+          "type": "singleLineText",
+          "config": {
+            "type": "singleLineText",
+            "options": null
+          },
+          "sourceField": {
+            "_id": "recnPxVCRXNNsjT3O",
+            "id": "people.name",
+            "name": "Name",
+            "airtableId": "flddWEhQh3juNrPNV"
+          }
+        },
+        {
+          "id": "fldokhIUIKkKBSEhw",
+          "name": "Status",
+          "description": "",
+          "type": "singleSelect",
+          "config": {
+            "type": "singleSelect",
+            "options": {
+              "choices": [
+                {
+                  "id": "selK8KTjY9mbtcJdt",
+                  "name": "Applied",
+                  "color": "blueLight2"
+                },
+                {
+                  "id": "selGcw2qG7QemyAWv",
+                  "name": "In review",
+                  "color": "tealLight2"
+                },
+                {
+                  "id": "selYTpx3hPttAd8m9",
+                  "name": "Hired",
+                  "color": "greenLight2"
+                },
+                {
+                  "id": "selRR9zHb9shaOsQj",
+                  "name": "Retired",
+                  "color": "cyanLight2"
+                }
+              ]
+            }
+          },
+          "sourceField": {
+            "_id": "recyyTViKGSyDk76a",
+            "id": "people.status",
+            "name": "Status",
+            "airtableId": "fldokhIUIKkKBSEhw"
+          }
+        },
+        {
+          "id": "fldSB2VGthy6UownL",
+          "name": "Department",
+          "description": "",
+          "type": "multipleRecordLinks",
+          "config": {
+            "type": "multipleRecordLinks",
+            "options": {
+              "linkedTableId": "tblU1UbMbwdevDCtT",
+              "isReversed": false,
+              "prefersSingleRecordLink": true,
+              "inverseLinkFieldId": "fldyjjQ0WpGx0G2Hi"
+            }
+          },
+          "sourceField": {
+            "_id": "recYQVuG0g103L1C5",
+            "id": "people.department",
+            "name": "Department",
+            "airtableId": "fldSB2VGthy6UownL"
+          }
+        },
+        {
+          "id": "fld3ENqL7o4Pq1tXx",
+          "name": "Email",
+          "description": "",
+          "type": "email",
+          "config": {
+            "type": "email",
+            "options": null
+          },
+          "sourceField": {
+            "_id": "recIIJVHS5XEPfk9h",
+            "id": "people.email",
+            "name": "Email",
+            "airtableId": "fld3ENqL7o4Pq1tXx"
+          }
+        }
+      ]
+    },
+    {
+      "id": "tblU1UbMbwdevDCtT",
+      "name": "Departments",
+      "description": "All departments in the organization.",
+      "sourceTable": {
+        "_id": "rec3Tu4VIKz9hldQ2",
+        "id": "departments",
+        "name": "Departments",
+        "airtableId": "tblU1UbMbwdevDCtT"
+      },
+      "primaryField": {
+        "id": "fldZyQfUl14i5wqdf",
+        "name": "Name",
+        "description": "",
+        "type": "singleLineText",
+        "config": {
+          "type": "singleLineText",
+          "options": null
+        },
+        "sourceField": {
+          "_id": "recWJdNzA7djfmudu",
+          "id": "departments.name",
+          "name": "Name",
+          "airtableId": "fldZyQfUl14i5wqdf"
+        }
+      },
+      "fields": [
+        {
+          "id": "fldZyQfUl14i5wqdf",
+          "name": "Name",
+          "description": "",
+          "type": "singleLineText",
+          "config": {
+            "type": "singleLineText",
+            "options": null
+          },
+          "sourceField": {
+            "_id": "recWJdNzA7djfmudu",
+            "id": "departments.name",
+            "name": "Name",
+            "airtableId": "fldZyQfUl14i5wqdf"
+          }
+        },
+        {
+          "id": "fldkwGlniwyMwmBXl",
+          "name": "Description",
+          "description": "",
+          "type": "multilineText",
+          "config": {
+            "type": "multilineText",
+            "options": null
+          },
+          "sourceField": {
+            "_id": "rec5w5Ehbt0r4wKoY",
+            "id": "departments.description",
+            "name": "Description",
+            "airtableId": "fldkwGlniwyMwmBXl"
+          }
+        },
+        {
+          "id": "fldyjjQ0WpGx0G2Hi",
+          "name": "People",
+          "description": "",
+          "type": "multipleRecordLinks",
+          "config": {
+            "type": "multipleRecordLinks",
+            "options": {
+              "linkedTableId": "tblW7MakeoFF0b5hw",
+              "isReversed": false,
+              "prefersSingleRecordLink": false,
+              "inverseLinkFieldId": "fldSB2VGthy6UownL"
+            }
+          },
+          "sourceField": {
+            "_id": "recr6ZgzMIVutFZEo",
+            "id": "departments.people",
+            "name": "People",
+            "airtableId": "fldyjjQ0WpGx0G2Hi"
+          }
+        }
+      ]
+    }
+  ]
+}

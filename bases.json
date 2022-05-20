@@ -1,0 +1,13 @@
+{
+  "main": "appi25THO2Jj68Ud8",
+  "clients": [
+    {
+      "id": "appeOFnjCxxL2Y5VV",
+      "name": "Ferated client A"
+    },
+    {
+      "id": "appcKX5t3c22LCM1b",
+      "name": "Federated client B"
+    }
+  ]
+}

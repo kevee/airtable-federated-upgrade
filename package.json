@@ -1,0 +1,16 @@
+{
+  "name": "airtable-deploy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "Kevin Miller <kevin@kevee.net>",
+  "type": "module",
+  "scripts": {
+    "audit-airtable": "node ./audit/audit.js",
+    "get-mapping": "node ./field-mapping/index.js > ./deployment-builder-block/frontend/mapping.json && cp ./deployment-builder-block/frontend/mapping.json ./upgrade-block/frontend/mapping.json"
+  },
+  "license": "Apache-2.0",
+  "dependencies": {
+    "airtable": "^0.11.4"
+  }
+}

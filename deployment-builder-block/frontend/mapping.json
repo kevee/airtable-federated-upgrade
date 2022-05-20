@@ -1,0 +1,256 @@
+{
+  "source": {
+    "tables": [
+      {
+        "_id": "rec3Tu4VIKz9hldQ2",
+        "id": "departments",
+        "name": "Departments",
+        "airtableId": "tblU1UbMbwdevDCtT"
+      },
+      {
+        "_id": "recPNZkl0rhzSsDSS",
+        "id": "people",
+        "name": "People",
+        "airtableId": "tblW7MakeoFF0b5hw"
+      }
+    ],
+    "fields": [
+      {
+        "_id": "rec5w5Ehbt0r4wKoY",
+        "id": "departments.description",
+        "name": "Description",
+        "airtableId": "fldkwGlniwyMwmBXl"
+      },
+      {
+        "_id": "recIIJVHS5XEPfk9h",
+        "id": "people.email",
+        "name": "Email",
+        "airtableId": "fld3ENqL7o4Pq1tXx"
+      },
+      {
+        "_id": "recWJdNzA7djfmudu",
+        "id": "departments.name",
+        "name": "Name",
+        "airtableId": "fldZyQfUl14i5wqdf"
+      },
+      {
+        "_id": "recYQVuG0g103L1C5",
+        "id": "people.department",
+        "name": "Department",
+        "airtableId": "fldSB2VGthy6UownL"
+      },
+      {
+        "_id": "recnPxVCRXNNsjT3O",
+        "id": "people.name",
+        "name": "Name",
+        "airtableId": "flddWEhQh3juNrPNV"
+      },
+      {
+        "_id": "recr6ZgzMIVutFZEo",
+        "id": "departments.people",
+        "name": "People",
+        "airtableId": "fldyjjQ0WpGx0G2Hi"
+      },
+      {
+        "_id": "recyyTViKGSyDk76a",
+        "id": "people.status",
+        "name": "Status",
+        "airtableId": "fldokhIUIKkKBSEhw"
+      }
+    ]
+  },
+  "clients": [
+    {
+      "id": "appcKX5t3c22LCM1b",
+      "version": "1.1.2",
+      "tables": [
+        {
+          "_id": "rec3sK7LLFZLHNFjs",
+          "id": "tblOJMnyqGwXa7uhW",
+          "sourceTable": {
+            "_id": "rec3Tu4VIKz9hldQ2",
+            "id": "departments",
+            "name": "Departments",
+            "airtableId": "tblU1UbMbwdevDCtT"
+          },
+          "fields": [
+            {
+              "_id": "recXXujzv3qByKYrM",
+              "id": "flds1b2MbzZgFaUvl",
+              "table": "rec3sK7LLFZLHNFjs",
+              "sourceField": {
+                "_id": "recr6ZgzMIVutFZEo",
+                "id": "departments.people",
+                "name": "People",
+                "airtableId": "fldyjjQ0WpGx0G2Hi"
+              }
+            },
+            {
+              "_id": "recXjavoS0Cd0a9VM",
+              "id": "fldTgIrGAbn1K0i1i",
+              "table": "rec3sK7LLFZLHNFjs",
+              "sourceField": {
+                "_id": "recWJdNzA7djfmudu",
+                "id": "departments.name",
+                "name": "Name",
+                "airtableId": "fldZyQfUl14i5wqdf"
+              }
+            }
+          ]
+        },
+        {
+          "_id": "recNYjSAdIRqa9N7A",
+          "id": "tblQPEm6tyYoFFX5z",
+          "sourceTable": {
+            "_id": "recPNZkl0rhzSsDSS",
+            "id": "people",
+            "name": "People",
+            "airtableId": "tblW7MakeoFF0b5hw"
+          },
+          "fields": [
+            {
+              "_id": "rec2bY9Ae4GnzMJqy",
+              "id": "fld7EwtCwdCdsVHBY",
+              "table": "recNYjSAdIRqa9N7A",
+              "sourceField": {
+                "_id": "recnPxVCRXNNsjT3O",
+                "id": "people.name",
+                "name": "Name",
+                "airtableId": "flddWEhQh3juNrPNV"
+              }
+            },
+            {
+              "_id": "recOVBaxJmrxA0Pfo",
+              "id": "fldi29UGXUDtgmw5z",
+              "table": "recNYjSAdIRqa9N7A",
+              "sourceField": {
+                "_id": "recyyTViKGSyDk76a",
+                "id": "people.status",
+                "name": "Status",
+                "airtableId": "fldokhIUIKkKBSEhw"
+              }
+            },
+            {
+              "_id": "recyreSSVJ6Cm6xgh",
+              "id": "fldMjU7sIrRPzSobO",
+              "table": "recNYjSAdIRqa9N7A",
+              "sourceField": {
+                "_id": "recYQVuG0g103L1C5",
+                "id": "people.department",
+                "name": "Department",
+                "airtableId": "fldSB2VGthy6UownL"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "appeOFnjCxxL2Y5VV",
+      "version": "1.1.1",
+      "tables": [
+        {
+          "_id": "recBLzdF6iq8pkdzI",
+          "id": "tblQNuFoZ11GrtNbG",
+          "sourceTable": {
+            "_id": "rec3Tu4VIKz9hldQ2",
+            "id": "departments",
+            "name": "Departments",
+            "airtableId": "tblU1UbMbwdevDCtT"
+          },
+          "fields": [
+            {
+              "_id": "recIku8QoZYQhwhvw",
+              "id": "fldgigPZ61mescMF8",
+              "table": "recBLzdF6iq8pkdzI",
+              "sourceField": {
+                "_id": "rec5w5Ehbt0r4wKoY",
+                "id": "departments.description",
+                "name": "Description",
+                "airtableId": "fldkwGlniwyMwmBXl"
+              }
+            },
+            {
+              "_id": "reccWO1T9bUGY5PF9",
+              "id": "fldVkqJw9wSK1mBV2",
+              "table": "recBLzdF6iq8pkdzI",
+              "sourceField": {
+                "_id": "recWJdNzA7djfmudu",
+                "id": "departments.name",
+                "name": "Name",
+                "airtableId": "fldZyQfUl14i5wqdf"
+              }
+            },
+            {
+              "_id": "recfwfqBliLC7PgfQ",
+              "id": "fldu5TkCKUuZWwdp5",
+              "table": "recBLzdF6iq8pkdzI",
+              "sourceField": {
+                "_id": "recr6ZgzMIVutFZEo",
+                "id": "departments.people",
+                "name": "People",
+                "airtableId": "fldyjjQ0WpGx0G2Hi"
+              }
+            }
+          ]
+        },
+        {
+          "_id": "recCbB5Qef7p7rkF2",
+          "id": "tblSTmEW2Tt7W1gZj",
+          "sourceTable": {
+            "_id": "recPNZkl0rhzSsDSS",
+            "id": "people",
+            "name": "People",
+            "airtableId": "tblW7MakeoFF0b5hw"
+          },
+          "fields": [
+            {
+              "_id": "rec6JrbU5OdDvPqWE",
+              "id": "fld9IeLs5y7WJh0vI",
+              "table": "recCbB5Qef7p7rkF2",
+              "sourceField": {
+                "_id": "recnPxVCRXNNsjT3O",
+                "id": "people.name",
+                "name": "Name",
+                "airtableId": "flddWEhQh3juNrPNV"
+              }
+            },
+            {
+              "_id": "recTkpSfHaRqNSv2l",
+              "id": "fldOnCpihMmyQeH5y",
+              "table": "recCbB5Qef7p7rkF2",
+              "sourceField": {
+                "_id": "recYQVuG0g103L1C5",
+                "id": "people.department",
+                "name": "Department",
+                "airtableId": "fldSB2VGthy6UownL"
+              }
+            },
+            {
+              "_id": "recZThbeGeYBpuSlt",
+              "id": "fldxI39jexuzxhe5a",
+              "table": "recCbB5Qef7p7rkF2",
+              "sourceField": {
+                "_id": "recIIJVHS5XEPfk9h",
+                "id": "people.email",
+                "name": "Email",
+                "airtableId": "fld3ENqL7o4Pq1tXx"
+              }
+            },
+            {
+              "_id": "recdPI0xaIXr3Ll05",
+              "id": "fldk6Rcwwf8cxIPZj",
+              "table": "recCbB5Qef7p7rkF2",
+              "sourceField": {
+                "_id": "recyyTViKGSyDk76a",
+                "id": "people.status",
+                "name": "Status",
+                "airtableId": "fldokhIUIKkKBSEhw"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
